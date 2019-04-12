@@ -17,13 +17,15 @@ import { BounceSpinnerComponent } from './components/bounce-spinner/bounce-spinn
 
 import * as day_api from 'dayjs';
 import { RingBounceSpinnerComponent } from './components/ring-bounce-spinner/ring-bounce-spinner.component';
+import { RingRotateSpinnerComponent } from './components/ring-rotate-spinner/ring-rotate-spinner.component';
 const dayjs = day_api;
 
 const COMPONENTS: Type<any>[] = [
     BaseSpinnerComponent,
     PlaneSpinnerComponent,
     BounceSpinnerComponent,
-    RingBounceSpinnerComponent
+    RingBounceSpinnerComponent,
+    RingRotateSpinnerComponent
 ];
 
 @NgModule({

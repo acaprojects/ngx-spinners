@@ -1,0 +1,10 @@
+<div [class]="'spinner ring-rotate' + (klass ? ' ' + klass : '')">
+    <div
+        [class]="'circle state-' + i"
+        [style.border-left-color]="color"
+        [style.border-bottom-color]="color"
+        *ngFor="let i of [1, 2, 3]"
+    >
+        <div class="inner"></div>
+    </div>
+</div>
