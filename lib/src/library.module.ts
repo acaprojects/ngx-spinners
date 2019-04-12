@@ -16,20 +16,20 @@ import { PlaneSpinnerComponent } from './components/plane-spinner/plane-spinner.
 import { BounceSpinnerComponent } from './components/bounce-spinner/bounce-spinner.component';
 
 import * as day_api from 'dayjs';
+import { RingBounceSpinnerComponent } from './components/ring-bounce-spinner/ring-bounce-spinner.component';
 const dayjs = day_api;
 
-const COMPONENTS: Type<any>[] = [BaseSpinnerComponent, PlaneSpinnerComponent, BounceSpinnerComponent];
+const COMPONENTS: Type<any>[] = [
+    BaseSpinnerComponent,
+    PlaneSpinnerComponent,
+    BounceSpinnerComponent,
+    RingBounceSpinnerComponent
+];
 
 @NgModule({
-    declarations: [
-        ...COMPONENTS
-    ],
-    imports: [
-        CommonModule
-    ],
-    exports: [
-        ...COMPONENTS
-    ]
+    declarations: [...COMPONENTS],
+    imports: [CommonModule],
+    exports: [...COMPONENTS]
 })
 class LibraryModule {
     public static version = '0.1.0';
@@ -40,7 +40,9 @@ class LibraryModule {
         if (!LibraryModule.init) {
             const now = dayjs();
             LibraryModule.init = true;
-            const build = now.isSame(this.build, 'd') ? `Today at ${this.build.format('h:mmA')}` : this.build.format('D MMM YYYY, h:mmA');
+            const build = now.isSame(this.build, 'd')
+                ? `Today at ${this.build.format('h:mmA')}`
+                : this.build.format('D MMM YYYY, h:mmA');
             LIBRARY_SETTINGS.version(LibraryModule.version, build);
         }
     }
