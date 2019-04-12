@@ -13,11 +13,12 @@ import { NgModule, Type } from '@angular/core';
 import { LIBRARY_SETTINGS } from './settings';
 import { BaseSpinnerComponent } from './components/spinner-base.component';
 import { PlaneSpinnerComponent } from './components/plane-spinner/plane-spinner.component';
+import { BounceSpinnerComponent } from './components/bounce-spinner/bounce-spinner.component';
 
 import * as day_api from 'dayjs';
 const dayjs = day_api;
 
-const COMPONENTS: Type<any>[] = [BaseSpinnerComponent, PlaneSpinnerComponent];
+const COMPONENTS: Type<any>[] = [BaseSpinnerComponent, PlaneSpinnerComponent, BounceSpinnerComponent];
 
 @NgModule({
     declarations: [
