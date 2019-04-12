@@ -1,0 +1,39 @@
+.spinner {
+    margin: auto;
+    position: relative;
+    display: flex;
+    user-select: none;
+    pointer-events: none;
+    height: 4em;
+    width: 4em;
+}
+
+.rect {
+    animation: sk-stretchdelay 1.3s infinite ease-in-out;
+    display: inline-block;
+    height: 3em;
+    margin-right: .2em;
+    width: .5em;
+    border-radius: .3em;
+
+    @for $i from 1 to 6 {
+        &.state-#{$i + 1} {
+            animation-delay: -1.2s + $i / 10;
+        }
+    }
+}
+
+@keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        margin-top: .9em;
+        height: 1.2em;
+    }
+
+    20% {
+        margin-top: 0em;
+        height: 3em;
+    }
+}

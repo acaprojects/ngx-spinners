@@ -11,15 +11,17 @@ import { CommonModule } from '@angular/common';
 import { NgModule, Type } from '@angular/core';
 
 import { LIBRARY_SETTINGS } from './settings';
+
 import { BaseSpinnerComponent } from './components/spinner-base.component';
 import { PlaneSpinnerComponent } from './components/plane-spinner/plane-spinner.component';
 import { BounceSpinnerComponent } from './components/bounce-spinner/bounce-spinner.component';
-
-import * as day_api from 'dayjs';
 import { RingBounceSpinnerComponent } from './components/ring-bounce-spinner/ring-bounce-spinner.component';
 import { RingRotateSpinnerComponent } from './components/ring-rotate-spinner/ring-rotate-spinner.component';
 import { RingBounceInSpinnerComponent } from './components/ring-bounce-in-spinner/ring-bounce-in-spinner.component';
 import { DoubleBounceSpinnerComponent } from './components/double-bounce-spinner/double-bounce-spinner.component';
+import { BarsSpinnerComponent } from './components/bars-spinner/bars-spinner.component';
+
+import * as day_api from 'dayjs';
 const dayjs = day_api;
 
 const COMPONENTS: Type<any>[] = [
@@ -29,7 +31,8 @@ const COMPONENTS: Type<any>[] = [
     RingBounceSpinnerComponent,
     RingRotateSpinnerComponent,
     RingBounceInSpinnerComponent,
-    DoubleBounceSpinnerComponent
+    DoubleBounceSpinnerComponent,
+    BarsSpinnerComponent
 ];
 
 @NgModule({
