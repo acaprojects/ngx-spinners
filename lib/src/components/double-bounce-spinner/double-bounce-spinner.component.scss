@@ -1,0 +1,39 @@
+.spinner {
+    margin: auto;
+    position: relative;
+    user-select: none;
+    pointer-events: none;
+    height: 4em;
+    width: 4em;
+}
+
+.circle {
+
+    &.one,
+    &.two {
+        position: absolute;
+        width: 4em;
+        height: 4em;
+        animation: sk-bounce 2s infinite ease-in-out;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        opacity: .6;
+    }
+
+    &.two {
+        animation-delay: -1s;
+    }
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
