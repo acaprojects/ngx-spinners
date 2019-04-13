@@ -25,6 +25,7 @@ import { CubeGridSpinnerComponent } from './components/cube-grid-spinner/cube-gr
 import { DotBounceSpinnerComponent } from './components/dot-bounce-spinner/dot-bounce-spinner.component';
 import { DotCircleSpinnerComponent } from './components/dot-circle-spinner/dot-circle-spinner.component';
 import { DotCircleScaleSpinnerComponent } from './components/dot-circle-scale-spinner/dot-circle-scale-spinner.component';
+import { CircleRingSpinnerComponent } from './components/circle-ring-spinner/circle-ring-spinner.component';
 
 import * as day_api from 'dayjs';
 const dayjs = day_api;
@@ -42,7 +43,8 @@ const COMPONENTS: Type<any>[] = [
     CubeGridSpinnerComponent,
     DotBounceSpinnerComponent,
     DotCircleSpinnerComponent,
-    DotCircleScaleSpinnerComponent
+    DotCircleScaleSpinnerComponent,
+    CircleRingSpinnerComponent
 ];
 
 @NgModule({
