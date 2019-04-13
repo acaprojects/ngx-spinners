@@ -1,4 +1,4 @@
-<div [class]="'spinner double-bounce' + (klass ? ' ' + klass : '')">
+<div [class]="'spinner bars' + (klass ? ' ' + klass : '')">
     <div [class]="'rect state-' + i" *ngFor="let i of [1, 2, 3, 4, 5, 6]" [style.background-color]="color">
         <div class="inner" [style.background-color]="color"></div>
     </div>

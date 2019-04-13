@@ -20,6 +20,7 @@ import { RingRotateSpinnerComponent } from './components/ring-rotate-spinner/rin
 import { RingBounceInSpinnerComponent } from './components/ring-bounce-in-spinner/ring-bounce-in-spinner.component';
 import { DoubleBounceSpinnerComponent } from './components/double-bounce-spinner/double-bounce-spinner.component';
 import { BarsSpinnerComponent } from './components/bars-spinner/bars-spinner.component';
+import { CubeMoveSpinnerComponent } from './components/cube-move-spinner/cube-move-spinner.component';
 
 import * as day_api from 'dayjs';
 const dayjs = day_api;
@@ -32,7 +33,8 @@ const COMPONENTS: Type<any>[] = [
     RingRotateSpinnerComponent,
     RingBounceInSpinnerComponent,
     DoubleBounceSpinnerComponent,
-    BarsSpinnerComponent
+    BarsSpinnerComponent,
+    CubeMoveSpinnerComponent
 ];
 
 @NgModule({
