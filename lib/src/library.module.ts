@@ -28,6 +28,7 @@ import { DotCircleScaleSpinnerComponent } from './components/dot-circle-scale-sp
 import { CircleRingSpinnerComponent } from './components/circle-ring-spinner/circle-ring-spinner.component';
 import { DoubleCircleRingSpinnerComponent } from './components/double-circle-ring/double-circle-ring-spinner.component';
 import { PairCircleRingSpinnerComponent } from './components/pair-circle-ring/pair-circle-ring-spinner.component';
+import { DotWaveSpinnerComponent } from './components/dot-wave-spinner/dot-wave-spinner.component';
 
 import * as day_api from 'dayjs';
 const dayjs = day_api;
@@ -48,7 +49,8 @@ const COMPONENTS: Type<any>[] = [
     DotCircleScaleSpinnerComponent,
     CircleRingSpinnerComponent,
     DoubleCircleRingSpinnerComponent,
-    PairCircleRingSpinnerComponent
+    PairCircleRingSpinnerComponent,
+    DotWaveSpinnerComponent
 ];
 
 @NgModule({
