@@ -19,6 +19,7 @@
     position: absolute;
     top: 50%;
     width: 4em;
+    box-sizing: border-box;
 
     @for $i from 1 to 4 {
         &.state-#{$i} {

@@ -15,6 +15,7 @@
     margin-right: .2em;
     width: .5em;
     border-radius: .3em;
+    will-change: height, margin-top;
 
     @for $i from 1 to 6 {
         &.state-#{$i + 1} {
