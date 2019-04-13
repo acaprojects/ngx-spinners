@@ -1,0 +1,27 @@
+<div [class]="'spinner double-circle-ring' + (klass ? ' ' + klass : '')">
+    <svg viewBox="0 0 120 120">
+        <circle
+            cx="60"
+            cy="60"
+            r="54"
+            fill="none"
+            [style.stroke]="color"
+            stroke-width="12"
+            stroke-dasharray="339.292"
+            [style.stroke-dashoffset]="339.292 * 0.8"
+            stroke-linecap="round"
+        />
+        <circle
+            class="reverse"
+            cx="60"
+            cy="60"
+            r="32"
+            fill="none"
+            [style.stroke]="color"
+            stroke-width="12"
+            stroke-dasharray="339.292"
+            [style.stroke-dashoffset]="339.292 * 0.8"
+            stroke-linecap="round"
+        />
+    </svg>
+</div>

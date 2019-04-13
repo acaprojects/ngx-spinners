@@ -26,6 +26,7 @@ import { DotBounceSpinnerComponent } from './components/dot-bounce-spinner/dot-b
 import { DotCircleSpinnerComponent } from './components/dot-circle-spinner/dot-circle-spinner.component';
 import { DotCircleScaleSpinnerComponent } from './components/dot-circle-scale-spinner/dot-circle-scale-spinner.component';
 import { CircleRingSpinnerComponent } from './components/circle-ring-spinner/circle-ring-spinner.component';
+import { DoubleCircleRingSpinnerComponent } from './components/double-circle-ring/double-circle-ring-spinner.component';
 
 import * as day_api from 'dayjs';
 const dayjs = day_api;
@@ -44,7 +45,8 @@ const COMPONENTS: Type<any>[] = [
     DotBounceSpinnerComponent,
     DotCircleSpinnerComponent,
     DotCircleScaleSpinnerComponent,
-    CircleRingSpinnerComponent
+    CircleRingSpinnerComponent,
+    DoubleCircleRingSpinnerComponent
 ];
 
 @NgModule({
