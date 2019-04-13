@@ -1,0 +1,51 @@
+.spinner {
+    margin: auto;
+    position: relative;
+    display: flex;
+    user-select: none;
+    pointer-events: none;
+    height: 4em;
+    width: 4em;
+}
+
+
+.dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4em;
+    height: 4em;
+
+    .inner {
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: .6em;
+        width: .6em;
+        margin: 0 auto;
+        animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+    }
+
+    @for $i from 1 to 12 {
+        &.state-#{$i} {
+            transform: rotate(30deg * $i);
+
+            .inner {
+                animation-delay: -$i * 100ms;
+            }
+        }
+    }
+}
+
+@keyframes sk-circleFadeDelay {
+
+    0%,
+    39%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}
