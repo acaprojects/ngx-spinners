@@ -24,6 +24,7 @@ import { CubeMoveSpinnerComponent } from './components/cube-move-spinner/cube-mo
 
 import * as day_api from 'dayjs';
 import { CubeGridSpinnerComponent } from './components/cube-grid-spinner/cube-grid-spinner.component';
+import { DotBounceSpinnerComponent } from './components/dot-bounce-spinner/dot-bounce-spinner.component';
 const dayjs = day_api;
 
 const COMPONENTS: Type<any>[] = [
@@ -36,7 +37,8 @@ const COMPONENTS: Type<any>[] = [
     DoubleBounceSpinnerComponent,
     BarsSpinnerComponent,
     CubeMoveSpinnerComponent,
-    CubeGridSpinnerComponent
+    CubeGridSpinnerComponent,
+    DotBounceSpinnerComponent
 ];
 
 @NgModule({

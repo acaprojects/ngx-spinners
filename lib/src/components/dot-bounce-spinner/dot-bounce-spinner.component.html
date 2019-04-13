@@ -1,0 +1,5 @@
+<div [class]="'spinner dot-bounce' + (klass ? ' ' + klass : '')">
+    <div [class]="'circle state-' + i" [style.background-color]="color" *ngFor="let i of [1, 2, 3]">
+        <div class="inner"></div>
+    </div>
+</div>
