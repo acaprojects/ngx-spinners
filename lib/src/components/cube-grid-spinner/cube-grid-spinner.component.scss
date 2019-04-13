@@ -1,0 +1,48 @@
+.spinner {
+    margin: auto;
+    position: relative;
+    user-select: none;
+    pointer-events: none;
+    height: 4em;
+    width: 4em;
+}
+
+.cube {
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    float: left;
+    height: 33%;
+    width: 33%;
+
+    &.state-1,
+    &.state-5,
+    &.state-9 {
+        animation-delay: -.2s;
+    }
+
+    &.state-2,
+    &.state-6 {
+        animation-delay: -.3s;
+    }
+
+    &.state-3 {
+        animation-delay: -.4s;
+    }
+
+    &.state-4,
+    &.state-8 {
+        animation-delay: -.1s;
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    35% {
+        transform: scale3d(0, 0, 1);
+    }
+}

@@ -1,0 +1,7 @@
+<div [class]="'spinner cube-grid' + (klass ? ' ' + klass : '')">
+    <div
+        [class]="'cube state-' + i"
+        *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+        [style.background-color]="color"
+    ></div>
+</div>
