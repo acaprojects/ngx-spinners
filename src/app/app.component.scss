@@ -1,7 +1,8 @@
-
 @import 'shared.styles';
 
-html, body, .app {
+html,
+body,
+.app {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -17,9 +18,11 @@ body {
     overflow: hidden;
     background-color: #37474F;
     font-size: $desktop-font-size;
+
     @include respond-to(mobile) {
         font-size: $tablet-font-size;
     }
+
     @include respond-to(mobile) {
         font-size: $mobile-font-size;
     }
@@ -30,6 +33,7 @@ body {
 }
 
 @include respond-to(not-mobile) {
+
     .mobile-only,
     .mobile {
         display: none !important;
@@ -37,6 +41,7 @@ body {
 }
 
 @include respond-to(not-tablet) {
+
     .tablet-only,
     .tablet {
         display: none !important;
@@ -44,6 +49,7 @@ body {
 }
 
 @include respond-to(not-desktop) {
+
     .desktop-only,
     .desktop {
         display: none !important;
@@ -57,6 +63,7 @@ body {
 }
 
 @include respond-to(tablet) {
+
     .not-tablet,
     .desktop-only {
         display: none !important;
@@ -64,6 +71,7 @@ body {
 }
 
 @include respond-to(mobile) {
+
     .not-mobile,
     .desktop-only {
         display: none !important;
@@ -74,7 +82,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin: 1em auto;
     width: 24em;
     min-height: 10em;
@@ -82,6 +90,8 @@ body {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 1px 3px 0 rgba(#000, .2), 0 1px 1px 0 rgba(#000, .14), 0 2px 1px -1px rgba(#000, .12);
-
 }
 
+a-spinner {
+    margin: .5em;
+}
