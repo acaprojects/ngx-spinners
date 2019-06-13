@@ -1,0 +1,50 @@
+.spinner {
+    margin: auto;
+    position: relative;
+    display: flex;
+    user-select: none;
+    pointer-events: none;
+    height: 4em;
+    width: 4em;
+}
+
+svg {
+    width: 100%;
+}
+
+svg circle {
+    transform-origin: center;
+    animation: sk-rotate-simple .8s infinite linear;
+
+    &.offset {
+        animation: sk-rotate-simple-180 .8s infinite linear;
+    }
+}
+
+@keyframes sk-rotate-simple {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-rotate-simple-180 {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(540deg);
+    }
+}
